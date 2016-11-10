@@ -1,0 +1,9 @@
+<div class="container">
+  <% @files.in_groups_of(3, false).each do |group| %>
+    <div class="row">
+      <% group.each do |file| %>
+            <img src="<%= file.media_url %>" style="width:29%">
+      <% end %>
+    </div>
+  <% end %>
+</div>
